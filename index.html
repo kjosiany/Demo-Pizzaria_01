@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Forno da Vila — site demonstrativo de uma pizzaria de bairro.">
+  <title>Forno da Vila | Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Forno da Vila">
+      <span class="logo-mark">FV</span>
+      <span>Forno da Vila</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#pizzas">Pizzas</a>
+      <a href="#sobre">A pizzaria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="header-cta" href="https://wa.me/553499152341" target="_blank" rel="noopener">
+      Pedir pelo WhatsApp
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img src="img/hero-pizza.jpg" alt="Pizza com queijo derretido" class="hero-image">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="small-title">Pizzaria de bairro</p>
+        <h1>Pizza boa é a que chega <em>quentinha.</em></h1>
+        <p class="hero-text">
+          Massa douradinha, recheio caprichado e sabores para dividir a mesa sem complicação.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#pizzas">Ver sabores</a>
+          <a class="button button-outline" href="https://wa.me/553499152341" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-note">Site demonstrativo</div>
+    </section>
+
+    <section class="featured" id="pizzas">
+      <div class="section-intro">
+        <p class="eyebrow">Do forno para a mesa</p>
+        <h2>Algumas das nossas pizzas</h2>
+        <p>Uma seleção ilustrativa para mostrar como o cardápio pode ficar no site da pizzaria.</p>
+      </div>
+
+      <div class="pizza-grid">
+        <article class="pizza-card">
+          <div class="pizza-photo">
+            <img src="img/pizza-mussarela.jpg" alt="Pizza de mussarela">
+            <span class="tag">Mais pedida</span>
+          </div>
+          <div class="pizza-info">
+            <div>
+              <h3>Mussarela</h3>
+              <p>Molho de tomate, mussarela e orégano.</p>
+            </div>
+            <strong>R$ 39,90</strong>
+          </div>
+          <button class="order-button" type="button" data-product="Mussarela">Pedir</button>
+        </article>
+
+        <article class="pizza-card">
+          <div class="pizza-photo">
+            <img src="img/hero-pizza.jpg" alt="Pizza de calabresa">
+            <span class="tag">Clássica</span>
+          </div>
+          <div class="pizza-info">
+            <div>
+              <h3>Calabresa</h3>
+              <p>Mussarela, calabresa, cebola e orégano.</p>
+            </div>
+            <strong>R$ 42,90</strong>
+          </div>
+          <button class="order-button" type="button" data-product="Calabresa">Pedir</button>
+        </article>
+
+        <article class="pizza-card">
+          <div class="pizza-photo">
+            <img src="img/pizza-especial.jpg" alt="Pizza especial com cogumelos e azeitonas">
+            <span class="tag">Especial</span>
+          </div>
+          <div class="pizza-info">
+            <div>
+              <h3>Vila Especial</h3>
+              <p>Mussarela, cogumelos, azeitonas e pimentão.</p>
+            </div>
+            <strong>R$ 54,90</strong>
+          </div>
+          <button class="order-button" type="button" data-product="Vila Especial">Pedir</button>
+        </article>
+      </div>
+
+      <div class="drinks">
+        <div class="drinks-copy">
+          <p class="eyebrow">Para acompanhar</p>
+          <h2>Tem refri também.</h2>
+          <p>As bebidas entram no cardápio sem roubar a cena da pizza.</p>
+        </div>
+        <div class="drink-list">
+          <article class="drink-card">
+            <img src="img/coca-original-transparente.png" alt="Coca-Cola Original 2 litros">
+            <div>
+              <h3>Coca-Cola 2L</h3>
+              <strong>R$ 12,00</strong>
+              <button class="mini-order" type="button" data-product="Coca-Cola 2L">Pedir</button>
+            </div>
+          </article>
+          <article class="drink-card">
+            <img src="img/coca-zero.png" alt="Coca-Cola Zero 2 litros">
+            <div>
+              <h3>Coca-Cola Zero 2L</h3>
+              <strong>R$ 12,00</strong>
+              <button class="mini-order" type="button" data-product="Coca-Cola Zero 2L">Pedir</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-photo">
+        <img src="img/pizza-da-casa.jpg" alt="Pizza da casa">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">A pizzaria</p>
+        <h2>Um site simples para uma pizzaria que quer aparecer bem.</h2>
+        <p>
+          A ideia aqui é ser direto: mostrar a comida, os sabores e o jeito mais fácil de fazer contato.
+          A ideia é deixar a experiência simples e direta.
+        </p>
+        <div class="points">
+          <div><b>01</b><span>Cardápio fácil de consultar</span></div>
+          <div><b>02</b><span>Fotos em destaque</span></div>
+          <div><b>03</b><span>WhatsApp sempre à mão</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <img src="img/pizza-da-casa.jpg" alt="" aria-hidden="true">
+      <div class="cta-overlay"></div>
+      <div class="cta-content">
+        <p class="eyebrow light">Bateu vontade?</p>
+        <h2>É só chamar.</h2>
+        <p>O pedido pode seguir direto para o WhatsApp da pizzaria.</p>
+        <a class="button button-white" href="https://wa.me/553499152341" target="_blank" rel="noopener">
+          Pedir pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Onde encontrar a gente</h2>
+        <p class="muted">Informações abaixo são ilustrativas e podem ser trocadas pelos dados reais do negócio.</p>
+      </div>
+      <div class="contact-details">
+        <div><span>WhatsApp</span><strong>(34) 99152-341</strong></div>
+        <div><span>Endereço</span><strong>Rua da Vila, 120</strong><small>Uberlândia/MG</small></div>
+        <div><span>Horário</span><strong>Terça a domingo</strong><small>18h às 23h30</small></div>
+        <a class="button button-red" href="https://wa.me/553499152341" target="_blank" rel="noopener">Falar com a pizzaria</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="logo footer-logo"><span class="logo-mark">FV</span><span>Forno da Vila</span></div>
+      <p>Pizza de bairro, sem complicação.</p>
+    </div>
+    <div class="footer-right">
+      <span>© 2026 Forno da Vila</span>
+      <span>Projeto demonstrativo — fotos e informações ilustrativas.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
